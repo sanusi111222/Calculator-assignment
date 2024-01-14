@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java Documentation</title>
+</head>
+<script>
+    function ac()
+    {
+        document.getElementById("res").value="";
+    }
+    function show(input)
+    {
+        document.getElementById("res").value+=input;
+    }
+    function cal()
+    {
+        var output=eval(document.getElementById("res").value);
+        document.getElementById("res").value=output;
+    }
+    function value(){
+        var x=document.getElementById("res").value;
+        document.getElementById("res").value=x.substr(0,x.length+1);
+    }
+</script>
+<body>
+<table border ="1">
+<caption><h1 class="h">MEMOI scientific calculator cs-229</h1></caption>
+    <tr>
+        <td colspan="3" align="center"bgcolor="blue"><input type = "text" class="t"id ="res"></td> 
+        <td align="center"><botton class="b"onclick= "ac()">AC</botton></td>
+    </tr>
+
+    <tr>
+        <td align="center"><botton class="b" onclick= "document.cacl.text.value=Math.log(document.cal.text.value)">Log</botton></td>
+        <td align="center"><botton class="b" onclick= "document.cacl.text.value=Math.cos(document.cal.text.value)">Cos</botton></td>
+        <td align="center"><botton class="b" onclick= "document.cacl.text.value=Math.tan(document.cal.text.value)">Tan</botton></td>
+        <td align="center"><botton class="b" onclick= "document.cacl.text.value=Math.sin(document.cal.text.value)">Sin</botton></td>
+    </tr>
+
+    <tr>
+        <td align="center"><botton class="b" onclick= "show('7')">7</botton></td>
+        <td align="center"><botton class="b" onclick= "show('8')">8</botton></td>
+        <td align="center"><botton class="b" onclick= "show('9')">9</botton></td>
+        <td align="center"><botton class="b" onclick= "show ('+')">+</botton></td>
+    </tr>
+
+    <tr>
+        <td align="center"><botton class="b" onclick= "show('4')">4</botton></td>
+        <td align="center"><botton class="b" onclick= "show('5')">5</botton></td>
+        <td align="center"><botton class="b" onclick= "show('6')">6</botton></td>
+        <td align="center"><botton class="b" onclick= "show ('-')">-</botton></td>
+    </tr>
+
+    <tr>
+        <td align="center"><botton class="b" onclick= "show('1')">1</botton></td>
+        <td align="center"><botton class="b" onclick= "show('2')">2</botton></td>
+        <td align="center"><botton class="b" onclick= "show('3')">3</botton></td>
+        <td align="center"><botton class="b" onclick= "show ('*')">*</botton></td>
+    </tr>
+
+    <tr>
+        <td align="center"><botton class="b" onclick= "show('%')">%</botton></td>
+        <td align="center"><botton class="b" onclick= "show('.')">.</botton></td>
+        <td align="center"><botton class="b" onclick= "show('0')">0</botton></td>
+        <td align="center"><botton class="b" onclick= "cal()">=</botton></td>
+    </tr>
+
+</table>
+</body>
+</html>
